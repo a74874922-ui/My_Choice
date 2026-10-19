@@ -133,7 +133,7 @@ function copyOrder(){const msg=buildOrder();if(!msg)return;if(navigator.clipboar
 document.getElementById("orderForm").addEventListener("submit",e=>{e.preventDefault();submitWhatsApp()});
 document.getElementById("search").addEventListener("input",e=>renderProducts(e.target.value));
 document.getElementById("year").textContent=new Date().getFullYear();
-renderProducts();renderCart();
+renderProducts();renderCart(); 
 </script>
 </body>
 </html>
