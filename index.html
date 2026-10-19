@@ -97,12 +97,35 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:20px 10px}
 const WHATSAPP_NUMBER = "917254833854";
 
 /* Sample products: change names, prices, descriptions and emoji to your own products. */
+
 const products = [
-  {id:1,name:"My Choice Product 1",price:299,desc:"Yahan apne product ki details likhein.",emoji:"🎁"},
-  {id:2,name:"My Choice Product 2",price:499,desc:"Quality product, aapki pasand ke liye.",emoji:"👕"},
-  {id:3,name:"My Choice Product 3",price:199,desc:"Product ki size, colour ya details yahan.",emoji:"👜"},
-  {id:4,name:"My Choice Product 4",price:349,desc:"Apna asli product aur price yahan dalein.",emoji:"👟"}
+  {
+    id: 1,
+    name: "Golden Bangles",
+    price: 150,
+    desc: "Stylish golden bangles",
+    emoji: "💛",
+    img: "jewellery1.jpg"
+  },
+  {
+    id: 2,
+    name: "Designer Chudi Set",
+    price: 200,
+    desc: "Beautiful designer chudi set",
+    emoji: "❤️",
+    img: "jewellery2.jpg"
+  },
+  {
+    id: 3,
+    name: "Fashion Jewellery",
+    price: 250,
+    desc: "Elegant fashion jewellery",
+    emoji: "💎",
+    img: "jewellery3.jpg"
+  }
 ];
+
+  
 const cart = {};
 const rupees = n => n.toLocaleString("en-IN");
 function renderProducts(filter=""){
